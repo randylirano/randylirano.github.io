@@ -7,7 +7,7 @@
 
 html{
 	font-size: 10px;
-	font-family: sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color: #eee;
 }
 
@@ -68,7 +68,7 @@ li{
 }
 
 .nav-link{
-	font-family: Consolas, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 5rem;
 	padding: 1rem;
 }
@@ -145,11 +145,11 @@ li{
 
 .landing-text h1{
 	font-size: 20rem;
-	font-family: consolas, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	background: linear-gradient(to top, #ffe838, #fd57bf);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	padding: 1rem;
+	padding: 20px;
 	user-select: none;
 }
 
@@ -160,6 +160,54 @@ li{
 /*End header*/
 
 /*Start about*/
+.about .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-heading{
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 0;
+	margin-bottom: 6rem;
+}
+
+.about-heading h1{
+	font-size: 10rem;
+	opacity: .3;
+}
+
+.about-heading h6{
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.profile-img{
+	flex: 1;
+	margin-right: 5rem;
+}
+
+.about-details{
+	flex: 1;
+}
+
+.social-media{
+	margin-top: 5rem;
+}
+
+.social-media i{
+	font-size: 5rem;
+	transition: color 650ms;
+}
+
+.fa-facebook-square:hover{
+	color: #4267b2;
+}
+
+.fa-github-square:hover{
+	color: #211F1F;
+}
 /*End about*/
 
 /*Start services*/
