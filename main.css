@@ -273,6 +273,10 @@ header{
 	width: 1.5rem;
 	background-color: #fc3;
 }
+
+.job-des li{
+    font-size: 2rem;
+}
 /*End Experience*/
 
 /* Start Footer */
