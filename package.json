@@ -1,0 +1,25 @@
+{
+  "name": "randylirano.github.io",
+  "version": "1.0.0",
+  "description": "This is my portfolio hosted using a github. In here you will find my experiences, educations, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randylirano/randylirano.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randylirano/randylirano.github.io/issues"
+  },
+  "homepage": "https://github.com/randylirano/randylirano.github.io#readme",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.4.1"
+  }
+}
