@@ -17,22 +17,80 @@
 
 <body>
     <!-- Navbar -->
-
-    <nav> Navigation
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./experiences.html">Experiences</a></li>
-            <li><a href="./projects.html">Project</a></li>
-        </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Randy Lirano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./experiences.html">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">Projects</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
     </nav>
 
     <main>
-        <header>
-            <h1>Experiences</h1>
-            <h6>My past and current employment timeline</h6>
-        </header>
+        <div class="container">
+            <header>
+                <h1>Experiences</h1>
+                <h6>My past and current employment timeline</h6>
+            </header>
+            <div class="exp-container">
+                <div class="timeline">
+                    <ul class="companies">
+                        <li class="date" data-date="06/2021 - 08/2021">
+                            <h2>Interactive Brokers Group</h2>
+                            <h6>Software Engineer Intern</h6>
+                            <ul class="job-des">
+                                <li>Created multiple major trading functionalities of a Client Portal (CP) using data from REST API.</li>
+                                <li>Built a GUI using Python’s tkinter library as a centralized platform to test the trading functionalities.</li>
+                            </ul>
+                        </li>
 
-        <ul class="timeline">
+                        <li class="date" data-date="01/2021 - 05/2021">
+                            <h2>Northeastern University</h2>
+                            <h6>Teaching Assistant</h6>
+                            <ul class="job-des">
+                                <li>Used Python to help students from various backgrounds start their study in the computer science field through the ALIGN program.</li>
+                            </ul>
+                        </li>
+
+                        <li class="date" data-date="10/2017 - 12/2019">
+                            <h2>TÜV SÜD America, Inc</h2>
+                            <h6>Product Safety Engineer</h6>
+                            <ul class="job-des">
+                                <li>Performed safety evaluation for various laboratory and IT equipment according to IEC 61010-1, IEC 60950-1, and IEC 62368-1.</li>
+                                <li>Passed three Proficiency Performance Tests that allows the lab to hold its accreditation.</li>
+                                <li>Demonstrated strong understanding of IEC 62368-1 and IEC 61010-1 standard by completing witness testing during Certification Body (CB) external audit without any non-conformity.</li>
+                            </ul>
+                        </li>
+
+                        <li class="date" data-date="09/2016 - 10/2017">
+                            <h2>UW Sensors, Energy, and Automation Laboratory (SEAL)</h2>
+                            <h6>Research Assistant</h6>
+                            <ul class="job-des">
+                                <li>Designed and built a portable device called the Total Exposure Monitoring Unit (TEMU) that could read the concentration of different-sized particles in the air.</li>
+                                <li>Performed step-by-step evaluation on TEMU prototypes to evaluate performance and fixed any malfunction.</li>
+                                <li>Developed a multi-stage mobile device that could trace residual particles on any surface.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <ul class="timeline">
             <li class="date">
                 <h6>June 2021 - August 2021</h6>
                 <h6>Interactive Brokers Group</h6>
@@ -73,7 +131,7 @@
                     <li>Developed a multi-stage mobile device that could trace residual particles on any surface.</li>
                 </ul>
             </li>
-        </ul>
+        </ul> -->
     </main>
 
     <footer class="copyright">
