@@ -13,13 +13,14 @@
     <!-- import bootstrap 5.1.1 icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- import custom stylesheet -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Randy Lirano</a>
+            <a class="navbar-brand" href="./index.html">Randy Lirano</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,10 +42,11 @@
 
     <main>
         <div class="container">
-            <header>
-                <h1>Experiences</h1>
+            <div class="section-heading">
+                <h4>Experiences</h4>
                 <h6>My past and current employment timeline</h6>
-            </header>
+            </div>
+            
             <div class="exp-container">
                 <div class="timeline">
                     <ul class="companies">
@@ -88,53 +90,11 @@
                 </div>
             </div>
         </div>
-        
 
-        <!-- <ul class="timeline">
-            <li class="date">
-                <h6>June 2021 - August 2021</h6>
-                <h6>Interactive Brokers Group</h6>
-                <h6>Software Engineer Intern</h6>
-                <ul class="job-des">
-                    <li>Created multiple major trading functionalities of a Client Portal (CP) using data from REST API.</li>
-                    <li>Built a GUI using Python’s tkinter library as a centralized platform to test the trading functionalities.</li>
-                </ul>
-            </li>
-
-            <li class="date">
-                <h6>January 2021 - May 2021</h6>
-                <h6>Northeastern University</h6>
-                <h6>Teaching Assistant</h6>
-                <ul class="job-des">
-                    <li>Used Python to help students from various backgrounds start their study in the computer science field through the ALIGN program.</li>
-                </ul>
-            </li>
-
-            <li class="date">
-                <h6>October 2017 - December 2019</h6>
-                <h6>TÜV SÜD</h6>
-                <h6>Product Safety Engineer</h6>
-                <ul class="job-des">
-                    <li>Performed safety evaluation for various laboratory and IT equipment according to IEC 61010-1, IEC 60950-1, and IEC 62368-1.</li>
-                    <li>Passed three Proficiency Performance Tests that allows the lab to hold its accreditation.</li>
-                    <li>Demonstrated strong understanding of IEC 62368-1 and IEC 61010-1 standard by completing witness testing during Certification Body (CB) external audit without any non-conformity.</li>
-                </ul>
-            </li>
-
-            <li class="date">
-                <h6>September 2016 - October 2017</h6>
-                <h6>UW Sensors, Energy, and Automation Laboratory (SEAL)</h6>
-                <h6>Research Assistant</h6>
-                <ul class="job-des">
-                    <li>Designed and built a portable device called the Total Exposure Monitoring Unit (TEMU) that could read the concentration of different-sized particles in the air.</li>
-                    <li>Performed step-by-step evaluation on TEMU prototypes to evaluate performance and fixed any malfunction.</li>
-                    <li>Developed a multi-stage mobile device that could trace residual particles on any surface.</li>
-                </ul>
-            </li>
-        </ul> -->
     </main>
 
     <footer class="copyright">
+        <button id="scrollToTopBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
         <p>
             &copy; 2021 Randy Lirano
         </p>
@@ -142,5 +102,7 @@
 
     <!-- import bootstrap 5.1.1 js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- custom javascript -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

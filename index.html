@@ -13,13 +13,14 @@
     <!-- import bootstrap 5.1.1 icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- import custom stylesheet -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Randy Lirano</a>
+            <a class="navbar-brand disable" href="./index.html">Randy Lirano</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,7 +52,7 @@
             </header>
 
             <!-- About -->
-            <div class="row">
+            <div class="row" id="about">
                 <div class="col-4">
                     <img class="img-fluid" src="./images/profile.jpg" alt="">
                 </div>
@@ -66,7 +67,7 @@
             </div>
 
             <!-- Education -->
-            <div class="row">
+            <div class="row" id="degree-list">
                 <div class="section-heading">
                     <h4>EDUCATION</h4>
                 </div>
@@ -142,12 +143,14 @@
                     </ul>
                 </div>
             </div>
+
         </div>
 
     </main>
 
 
     <footer class="copyright">
+        <button id="scrollToTopBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
         <p>
             &copy; 2021 Randy Lirano
         </p>
@@ -155,5 +158,7 @@
 
     <!-- import bootstrap 5.1.1 js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- custom javascript -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

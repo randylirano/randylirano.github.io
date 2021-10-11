@@ -1,0 +1,180 @@
+/*Global style*/
+html {
+  font-size: 15px;
+}
+
+main {
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+a{
+  text-decoration: none;
+  color: #868686;
+}
+
+header{
+  height: 100vh;
+  width: 100%;
+}
+
+/*Reusable style*/
+.section-heading{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-heading h4{
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, .3);
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.section-heading h6{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#landing-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#landing-text h1{
+  font-size: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  padding: 20px;
+  user-select: none;
+}
+
+#landing-text h6{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/*Contact Information*/
+#social-media{
+  margin-top: 2rem;
+}
+
+#social-media i{
+  font-size: 3rem;
+  transition: color 700ms;
+}
+
+#social-media ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;          
+}
+
+#social-media li {
+  margin: 0 1.5rem;
+}
+
+.bi-linkedin:hover {
+  color: #006192;
+}
+
+.bi-github:hover {
+  color: #24292e;
+}
+
+.bi-google:hover {
+  color: #D44638;
+}
+
+/*experience*/
+.exp-container{
+    width: 90%;
+    max-width: 100rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline .companies{
+    border-left: 4px solid #fc3;
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    text-align: left;
+    list-style: none;
+    width: 70%;
+}
+
+.timeline .date{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.timeline .date:last-of-type{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after{
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline .date::before{
+  content: attr(data-date);
+  left: -21rem;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1.5rem;
+}
+
+.timeline .date::after{
+  content: '';
+  box-shadow: 0 0 0 4px #333;
+  border-radius: 100%;
+  left: -6rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #fc3;
+}
+
+/*Footer*/
+#scrollToTopBtn {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fc3;
+  top: -2rem;
+  right: 5rem;
+  border-radius: 100%;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.copyright p{
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fc3;
+}

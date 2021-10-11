@@ -13,13 +13,14 @@
     <!-- import bootstrap 5.1.1 icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- import custom stylesheet -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Randy Lirano</a>
+            <a class="navbar-brand" href="./index.html">Randy Lirano</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,10 +42,10 @@
 
     <main>
         <div class="container">
-            <header>
-                <h1>Projects</h1>
+            <div class="section-heading">
+                <h4>Projects</h4>
                 <h6>The following are hardware and software project I've done.</h6>
-            </header>
+            </div>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col-md">
@@ -107,6 +108,7 @@
     </main>
 
     <footer class="copyright">
+        <button id="scrollToTopBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
         <p>
             &copy; 2021 Randy Lirano
         </p>
@@ -114,5 +116,7 @@
 
     <!-- import bootstrap 5.1.1 js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- custom javascript -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
