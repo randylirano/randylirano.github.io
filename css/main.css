@@ -154,6 +154,19 @@ header{
   background-color: #fc3;
 }
 
+/*Projects*/
+#projects_listings {
+  list-style: None;
+}
+
+.project_item {
+  margin: 2rem;
+}
+
+.project_url {
+  list-style: None;
+}
+
 /*Footer*/
 #scrollToTopBtn {
   position: absolute;

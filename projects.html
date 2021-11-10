@@ -1,122 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Randy Lirano's projects page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Randy Lirano's projects page" />
 
-    <title>Randy Lirano</title>
+        <title>Randy Lirano</title>
 
-    <!-- import bootstrap 5.1.1 stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- import bootstrap 5.1.1 icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- import custom stylesheet -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+        <!-- import bootstrap 5.1.1 stylesheet -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <!-- import bootstrap 5.1.1 icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
+        <!-- import custom stylesheet -->
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">Randy Lirano</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">Randy Lirano</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="./index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./experiences.html"
+                                >Experiences</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projects.html"
+                                >Projects</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="section-heading">
+                    <h4>Projects</h4>
+                    <h6>
+                        The following are hardware and software project I've
+                        done.
+                    </h6>
+                </div>
+
+                <div class="row">
+                    <ul id="projects_listings">
+                        <li class="project_item">
+                            <div class="card">
+                                <div class="card-header">
+                                    Nomad
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        This is a project of two people, where we built a web application to connect project owners with freelancers. I built the JSON hierarchy of our database that was used to handle users' information and project listings. I built routes to handle CRUD operation for user signup and freelancers posting.
+                                    </p>
+                                    <ul class="project_url">
+                                        <li class="project_url_item">
+                                            <a href="https://nomad-app-project.herokuapp.com/" class="btn btn-primary"
+                                        target="_blank">Web</a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="skill-tags">
+                                        <li>SQlite</li>
+                                        <li>Node.js</li>
+                                        <li>Git</li>
+                                        <li>MongoDB</li>
+                                        <li>Redis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="project_item">
+                            <div class="card">
+                                <div class="card-header">
+                                    Application Manager
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        I built an application that manages job
+                                        applications received by a single
+                                        company. I used a dummy database to test
+                                        the functionality of the application.
+                                        The application was developed using a
+                                        relational database, then replaced using
+                                        document database to reduce linking. As
+                                        a final step of the development, an
+                                        in-memory database was added.
+                                    </p>
+                                    <a
+                                        href="https://github.com/randylirano/NEU-CS5200-Summer2021-Project-3"
+                                        class="btn btn-primary"
+                                        target="_blank"
+                                        >GitHub</a
+                                    >
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="skill-tags">
+                                        <li>SQlite</li>
+                                        <li>Node.js</li>
+                                        <li>Git</li>
+                                        <li>MongoDB</li>
+                                        <li>Redis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="project_item">
+                            <div class="card">
+                                <div class="card-header">
+                                    ChatBot with Recipe
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        This is a group project where we built a
+                                        chatbot that responds to a recipe
+                                        request and a general conversation. The
+                                        chatbot was incorporated using neural
+                                        network model and rule-based model to
+                                        provide a response. A GUI was used to
+                                        takes the user’s input and decides the
+                                        appropriate model to call for a
+                                        response.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="skill-tags">
+                                        <li>Python</li>
+                                        <li>NLTK</li>
+                                        <li>TensorFlow</li>
+                                        <li>Git</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="project_item">
+                            <div class="card">
+                                <div class="card-header">
+                                    Face Mask Detection
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The purpose of the project is to
+                                        demonstrate the practice of software
+                                        engineering principles in a group
+                                        environment. Insipired by some
+                                        challenges of the COVID-19 pandemic,
+                                        this web based application could detect
+                                        when a person is properly wearing a
+                                        mask. I participated in the web
+                                        development team where I developed a web
+                                        structure that will serve as the
+                                        platform for our AI-based face mask
+                                        detection model. To keep all the commits
+                                        organized and reduce risk of accidental
+                                        overwrite, we designate 2 people to
+                                        review every merge request. I was the
+                                        reviewer from the web development team,
+                                        working together with one more reviewer
+                                        from the backend team to review every
+                                        merge request.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="skill-tags">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Angular</li>
+                                        <li>Git</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="copyright">
+            <button id="scrollToTopBtn">
+                <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./experiences.html">Experiences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./projects.html">Projects</a>
-                    </li>
-                </ul> 
-            </div>
-        </div>
-    </nav>
+            <p>&copy; 2021 Randy Lirano</p>
+        </footer>
 
-    <main>
-        <div class="container">
-            <div class="section-heading">
-                <h4>Projects</h4>
-                <h6>The following are hardware and software project I've done.</h6>
-            </div>
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                <div class="col-md">
-                    <div class="card">
-                        <div class="card-header">Application Manager</div>
-                        <div class="card-body">
-                            <p class="card-text">I built an application that manages job applications received by a single company. I used a dummy database to test the functionality of the application. The application was developed using a relational database, then replaced using document database to reduce linking. As a final step of the development, an in-memory database was added.</p>
-                            <a href="https://github.com/randylirano/NEU-CS5200-Summer2021-Project-3" class="btn btn-primary" target="_blank">GitHub</a>
-                        </div>
-                        <div class="card-footer">
-                            <ul class="skill-tags">
-                                <li>SQlite</li>
-                                <li>Node.js</li>
-                                <li>Git</li>
-                                <li>MongoDB</li>
-                                <li>Redis</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md">
-                    <div class="card">
-                        <div class="card-header">ChatBot with Recipe</div>
-                        <div class="card-body">
-                            <p class="card-text">This is a group project where we built a chatbot that responds to a recipe request and a general conversation. The chatbot was incorporated using neural network model and rule-based model to provide a response. A GUI was used to takes the user’s input and decides the appropriate model to call for a response.</p>
-                        </div>
-                        <div class="card-footer">
-                            <ul class="skill-tags">
-                                <li>Python</li>
-                                <li>NLTK</li>
-                                <li>TensorFlow</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md">
-                    <div class="card">
-                        <div class="card-header">Face Mask Detection</div>
-                        <div class="card-body">
-                            <p class="card-text">The purpose of the project is to demonstrate the practice of software engineering principles in a group environment. Insipired by some challenges of the COVID-19 pandemic, this web based application could detect when a person is properly wearing a mask. I participated in the web development team where I developed a web structure that will serve as the platform for our AI-based face mask detection model. To keep all the commits organized and reduce risk of accidental overwrite, we designate 2 people to review every merge request. I was the reviewer from the web development team, working together with one more reviewer from the backend team to review every merge request.</p>
-                        </div>
-                        <div class="card-footer">
-                            <ul class="skill-tags">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Angular</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>              
-
-            </div>
-
-        </div>
-        
-    </main>
-
-    <footer class="copyright">
-        <button id="scrollToTopBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
-        <p>
-            &copy; 2021 Randy Lirano
-        </p>
-    </footer>
-
-    <!-- import bootstrap 5.1.1 js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <!-- custom javascript -->
-    <script src="./js/main.js"></script>
-</body>
+        <!-- import bootstrap 5.1.1 js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"
+        ></script>
+        <!-- custom javascript -->
+        <script src="./js/main.js"></script>
+    </body>
 </html>
